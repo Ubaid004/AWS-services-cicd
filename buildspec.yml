@@ -9,11 +9,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - cp index.html /
+      - cp index.html /zoro-app.zip
   post_build:
     commands:
       - echo Configuring NGINX
 
 artifacts:
   files:
-    - /
+    - /zoro-app.zip
